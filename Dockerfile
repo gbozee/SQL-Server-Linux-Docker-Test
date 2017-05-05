@@ -13,4 +13,5 @@ COPY entrypoint.sh entrypoint.sh
 RUN chmod +x ./SqlCmdStartup.sh
 
 
-CMD /bin/bash ./entrypoint.sh
+ENTRYPOINT /bin/bash ./entrypoint.sh
+CMD /bin/bash ./SqlCmdStartup.sh 
